@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="ab"
+           fetch="https://github.com/anuragbhaumik/" />
+  <remote  name="yaap"
+           revision="eleven"
+           fetch="https://github.com/yaap/" />
+  
+   
+
+<!-- Hardware removals -->
+<remove-project name="LineageOS/android_hardware_qcom_display" />
+<remove-project name="LineageOS/android_hardware_qcom_audio" />
+<remove-project name="LineageOS/android_hardware_qcom_media" />
+
+
+<!-- SM8150 HALs -->
+<project name="hardware_qcom-caf_sm8150_display" path="hardware/qcom-caf/sm8150/display" remote="ab" revision="eleven" />
+<project name="hardware_qcom-caf_sm8150_audio" path="hardware/qcom-caf/sm8150/audio" remote="yaap" />
+<project name="hardware_qcom-caf_sm8150_media" path="hardware/qcom-caf/sm8150/media" remote="yaap" />
+
+</manifest>
